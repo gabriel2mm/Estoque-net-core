@@ -26,7 +26,7 @@ namespace Stock.Infrastructure.Repositories
             Invoice invoice = base.Find(key);
             if (invoice != null)
             {
-                _context.Entry(invoice).Collection<ProductTransition>(i => i.ProductTransitions).Load();
+                _context.Entry(invoice).Collection(i => i.ProductTransitions).Load();
             }
             return invoice;
         }

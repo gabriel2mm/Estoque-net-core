@@ -1,0 +1,12 @@
+Y:\Faculdade\Estoque\ModuloEstoque\Utils\bin\Debug\netcoreapp3.1\Utils.deps.json
+Y:\Faculdade\Estoque\ModuloEstoque\Utils\bin\Debug\netcoreapp3.1\Utils.dll
+Y:\Faculdade\Estoque\ModuloEstoque\Utils\bin\Debug\netcoreapp3.1\Utils.pdb
+Y:\Faculdade\Estoque\ModuloEstoque\Utils\bin\Debug\netcoreapp3.1\Domain.dll
+Y:\Faculdade\Estoque\ModuloEstoque\Utils\bin\Debug\netcoreapp3.1\Domain.pdb
+Y:\Faculdade\Estoque\ModuloEstoque\Utils\obj\Debug\netcoreapp3.1\Utils.csprojAssemblyReference.cache
+Y:\Faculdade\Estoque\ModuloEstoque\Utils\obj\Debug\netcoreapp3.1\Utils.AssemblyInfoInputs.cache
+Y:\Faculdade\Estoque\ModuloEstoque\Utils\obj\Debug\netcoreapp3.1\Utils.AssemblyInfo.cs
+Y:\Faculdade\Estoque\ModuloEstoque\Utils\obj\Debug\netcoreapp3.1\Utils.csproj.CoreCompileInputs.cache
+Y:\Faculdade\Estoque\ModuloEstoque\Utils\obj\Debug\netcoreapp3.1\Utils.csproj.CopyComplete
+Y:\Faculdade\Estoque\ModuloEstoque\Utils\obj\Debug\netcoreapp3.1\Utils.dll
+Y:\Faculdade\Estoque\ModuloEstoque\Utils\obj\Debug\netcoreapp3.1\Utils.pdb

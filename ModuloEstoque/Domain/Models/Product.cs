@@ -1,6 +1,7 @@
 ﻿
 
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -25,7 +26,7 @@ namespace Stock.Domain.Models
         public String Measure { get; set; }
         [Column("Fornecedor")]
         [Required]
-        public Provider Provider { get; set; }
+        public ICollection<ProductProvider> Providers { get; set; }
         [Column("Entrada")]
         public DateTime Input { get; set; }
         [Column("Saida")]
@@ -47,7 +48,7 @@ namespace Stock.Domain.Models
             this.Name = product.Name;
             this.Output = product.Output;
             this.Price = product.Price;
-            this.Provider = product.Provider;
+            this.Providers = product.Providers;
             this.Unit = product.Unit;
         }
     }

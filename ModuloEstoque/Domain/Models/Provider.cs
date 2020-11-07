@@ -11,9 +11,13 @@ namespace Stock.Domain.Models
     {
         [Key]
         public Guid Id { get; set; }
-        [Column("Name")]
+        [Column("Nome")]
         [Required]
         public String Name { get; set; }
+
+        [Column("Produto")]
+        [Required]
+        public ICollection<ProductProvider> Products { get; set; }
 
         public Provider Clone()
         {
@@ -23,6 +27,7 @@ namespace Stock.Domain.Models
         public void Copy(Provider provider)
         {
             this.Name = provider.Name;
+            this.Products = provider.Products;
         }
     }
 }

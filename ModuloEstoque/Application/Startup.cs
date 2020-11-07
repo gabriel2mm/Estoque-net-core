@@ -16,6 +16,7 @@ namespace Stock.Application
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -26,8 +27,22 @@ namespace Stock.Application
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers().AddControllersAsServices();
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                                  builder =>
+                                  {
+                                      builder
+                                      .AllowAnyOrigin()
+                                      .AllowAnyHeader()
+                                      .AllowAnyMethod()
+                                      .Build();
+                                  });
+            });
+
+            services.AddControllers().AddControllersAsServices().AddNewtonsoftJson();
             services.AddDbContext<EfContext>(options => options.UseLazyLoadingProxies(false).UseSqlServer(Configuration.GetConnectionString("principal")), ServiceLifetime.Scoped);
+            services.AddScoped<IRepository<Showcase>, ShowcaseRepository>();
             services.AddScoped<IRepository<Invoice>, InvoiceRepository>();
             services.AddScoped<IRepository<Product>, ProductRepository>();
             services.AddScoped<IRepository<Location>, LocationRepository>();
@@ -35,6 +50,7 @@ namespace Stock.Application
             services.AddScoped<IRepository<Warehouse>, WareHouseRepository>();
             services.AddScoped<IRepository<ProductManagement>, ProductManagementRepository>();
             services.AddScoped<IRepository<ProductTransition>, ProductTransitionRepository>();
+            services.AddScoped<IRepository<ProductProvider>, ProductProviderRepository>();
 
             services.AddSwaggerGen(c =>
             {
@@ -76,8 +92,10 @@ namespace Stock.Application
             }
 
             app.UseHttpsRedirection();
-
+            
             app.UseRouting();
+
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseAuthorization();
 

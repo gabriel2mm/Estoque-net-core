@@ -20,7 +20,7 @@ namespace Stock.Infrastructure.Repositories
         {
             return base.GetAll()
                 .Include(p => p.Product)
-                    .ThenInclude(p => p.Provider)
+                    .ThenInclude(p => p.Providers)
                 .Include(p => p.Warehouse)
                     .ThenInclude(w => w.Location)
                 .Include(p => p.Invoice)

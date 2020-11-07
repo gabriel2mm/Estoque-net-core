@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using Stock.Domain.Enumerators;
 using Stock.Domain.Interfaces;
 using Stock.Domain.Models;
-using Stock.Domain.Models.DTO;
 using Stock.Utils.Helpers;
 
 namespace Stock.Application.Controllers
@@ -39,6 +38,12 @@ namespace Stock.Application.Controllers
         public ProductManagement Get(Guid id)
         {
             return _repository.Find(id);
+        }
+
+        [HttpGet("/product/{id}")]
+        public ProductManagement getProduct(Guid id)
+        {
+            return _repository.Get(p => p.Product.Id.Equals(id)).FirstOrDefault();
         }
 
         // POST api/productmanagement
@@ -90,8 +95,6 @@ namespace Stock.Application.Controllers
                         _repository.Add(productManagement);
                         _repository.SaveAll();
 
-                        
-                      
                         _transitionRepository.Add(pt);
                         _transitionRepository.SaveAll();
                     }

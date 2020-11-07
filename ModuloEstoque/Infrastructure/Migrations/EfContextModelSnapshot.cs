@@ -135,17 +135,12 @@ namespace Infrastructure.Migrations
                         .HasColumnName("CodProduto")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("ProviderId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Unit")
                         .IsRequired()
                         .HasColumnName("Unidade")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ProviderId");
 
                     b.ToTable("Produto");
                 });
@@ -184,6 +179,21 @@ namespace Infrastructure.Migrations
                     b.HasIndex("WareHouseProductControlId");
 
                     b.ToTable("ControleProdutos");
+                });
+
+            modelBuilder.Entity("Stock.Domain.Models.ProductProvider", b =>
+                {
+                    b.Property<Guid>("ProductId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ProviderId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("ProductId", "ProviderId");
+
+                    b.HasIndex("ProviderId");
+
+                    b.ToTable("ProductsProviders");
                 });
 
             modelBuilder.Entity("Stock.Domain.Models.ProductTransition", b =>
@@ -236,12 +246,40 @@ namespace Infrastructure.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnName("Name")
+                        .HasColumnName("Nome")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Fornecedor");
+                });
+
+            modelBuilder.Entity("Stock.Domain.Models.Showcase", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Color")
+                        .HasColumnName("cor")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .HasColumnName("descrição")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .HasColumnName("imagem")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("ProductManagementId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductManagementId");
+
+                    b.ToTable("Vitrine");
                 });
 
             modelBuilder.Entity("Stock.Domain.Models.Warehouse", b =>
@@ -272,15 +310,6 @@ namespace Infrastructure.Migrations
                     b.ToTable("Deposito");
                 });
 
-            modelBuilder.Entity("Stock.Domain.Models.Product", b =>
-                {
-                    b.HasOne("Stock.Domain.Models.Provider", "Provider")
-                        .WithMany()
-                        .HasForeignKey("ProviderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("Stock.Domain.Models.ProductManagement", b =>
                 {
                     b.HasOne("Stock.Domain.Models.Product", "Product")
@@ -291,6 +320,21 @@ namespace Infrastructure.Migrations
                         .WithMany("ProductManagements")
                         .HasForeignKey("WareHouseProductControlId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Stock.Domain.Models.ProductProvider", b =>
+                {
+                    b.HasOne("Stock.Domain.Models.Provider", "Provider")
+                        .WithMany("Products")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Stock.Domain.Models.Product", "Product")
+                        .WithMany("Providers")
+                        .HasForeignKey("ProviderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Stock.Domain.Models.ProductTransition", b =>
@@ -311,6 +355,13 @@ namespace Infrastructure.Migrations
                         .HasForeignKey("WarehouseId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Stock.Domain.Models.Showcase", b =>
+                {
+                    b.HasOne("Stock.Domain.Models.ProductManagement", "ProductManagement")
+                        .WithMany()
+                        .HasForeignKey("ProductManagementId");
                 });
 
             modelBuilder.Entity("Stock.Domain.Models.Warehouse", b =>

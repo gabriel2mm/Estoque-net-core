@@ -14,24 +14,9 @@ namespace Stock.Infrastructure.Repositories
             _context = context;
         }
 
-        public override IQueryable<Product> GetAll()
-        {
-            return base.GetAll().Include(p => p.Provider);
-        }
-
-        public override Product Find(params object[] key)
-        {
-            Product product = base.Find(key);
-            if (product != null)
-            {
-                _context.Entry(product).Reference<Provider>(p => p.Provider).Load();
-            }
-            return product;
-        }
-
         public override void Update(Product obj)
         {
-            _context.Entry(obj.Provider).State = EntityState.Modified;
+            _context.Entry(obj.Providers).State = EntityState.Modified;
             _context.Entry(obj).State = EntityState.Modified;
         }
     }

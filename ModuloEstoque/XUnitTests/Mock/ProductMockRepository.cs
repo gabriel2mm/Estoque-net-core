@@ -22,7 +22,7 @@ namespace Stock.XUnitTests.Mock
                     Output = DateTime.Now,
                     Price = 10,
                     ProductCode = "101A",
-                    Provider = new Provider()
+                    Providers = null
                 }
             };
         }
