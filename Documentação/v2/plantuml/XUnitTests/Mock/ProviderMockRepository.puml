@@ -1,0 +1,13 @@
+@startuml
+class ProviderMockRepository {
+    + ProviderMockRepository()
+    + <<override>> GetAll() : IQueryable<Provider>
+    + <<override>> Find(key:object[]) : Provider
+    + <<override>> Add(obj:Provider) : void
+    + <<override>> Update(obj:Provider) : void
+    + <<override>> Delete(predicate:Func<Provider, bool>) : void
+}
+class "MockRepository`1"<T> {
+}
+"MockRepository`1" "<Provider>" <|-- ProviderMockRepository
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+class ProductTransitionControllerTests {
+    + ProductTransitionControllerTests()
+    + Get() : void
+    + Get_With_Id() : void
+    + Delete() : void
+}
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+class ProductTransition {
+    + UnitCost : double <<get>> <<set>>
+    + Quantity : int <<get>> <<set>>
+    + Clone() : ProductTransition
+    + Copy(productTransition:ProductTransition) : void
+}
+ProductTransition --> "Id" Guid
+ProductTransition --> "Transition" DateTime
+ProductTransition --> "TransitionType" TransitionType
+ProductTransition --> "Product" Product
+ProductTransition --> "Warehouse" Warehouse
+ProductTransition --> "Invoice" Invoice
+@enduml

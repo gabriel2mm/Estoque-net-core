@@ -1,0 +1,12 @@
+@startuml
+class ShowcaseRepository {
+    + ShowcaseRepository(context:EfContext)
+    + <<override>> GetAll() : IQueryable<Showcase>
+    + <<override>> Add(obj:Showcase) : void
+    + <<override>> Find(key:object[]) : Showcase
+    + <<override>> Update(obj:Showcase) : void
+}
+class "Repository`1"<T> {
+}
+"Repository`1" "<Showcase>" <|-- ShowcaseRepository
+@enduml

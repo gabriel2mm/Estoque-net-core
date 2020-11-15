@@ -1,0 +1,9 @@
+@startuml
+class ProductRepository {
+    + ProductRepository(context:EfContext)
+    + <<override>> Update(obj:Product) : void
+}
+class "Repository`1"<T> {
+}
+"Repository`1" "<Product>" <|-- ProductRepository
+@enduml

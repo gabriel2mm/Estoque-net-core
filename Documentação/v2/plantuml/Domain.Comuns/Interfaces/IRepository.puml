@@ -1,0 +1,11 @@
+@startuml
+interface "IRepository`1"<TEntity> {
+    GetAll() : IQueryable<TEntity>
+    Get(predicate:Func<TEntity, bool>) : IQueryable<TEntity>
+    Find(key:object[]) : TEntity
+    Update(obj:TEntity) : void
+    SaveAll() : void
+    Add(obj:TEntity) : void
+    Delete(predicate:Func<TEntity, bool>) : void
+}
+@enduml

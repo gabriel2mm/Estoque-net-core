@@ -1,0 +1,11 @@
+@startuml
+class WarehouseController {
+    + WarehouseController(repository:IRepository<Warehouse>)
+    + Get() : IEnumerable<Warehouse>
+    + Get(id:Guid) : Warehouse
+    + Post(warehouse:Warehouse) : void
+    + Put(id:Guid, value:Warehouse) : void
+    + Delete(id:Guid) : void
+}
+ControllerBase <|-- WarehouseController
+@enduml

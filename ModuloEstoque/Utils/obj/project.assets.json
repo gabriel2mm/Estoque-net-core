@@ -2,28 +2,28 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Domain/1.0.0": {
+      "Domain.Stock/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
-          "bin/placeholder/Domain.dll": {}
+          "bin/placeholder/Domain.Stock.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Domain.dll": {}
+          "bin/placeholder/Domain.Stock.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Domain/1.0.0": {
+    "Domain.Stock/1.0.0": {
       "type": "project",
-      "path": "../Domain/Domain.csproj",
-      "msbuildProject": "../Domain/Domain.csproj"
+      "path": "../Domain.Stock/Domain.Stock.csproj",
+      "msbuildProject": "../Domain.Stock/Domain.Stock.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Domain >= 1.0.0"
+      "Domain.Stock >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -32,9 +32,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Utils\\Utils.csproj",
-      "projectName": "Utils",
-      "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Utils\\Utils.csproj",
+      "projectUniqueName": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Utils\\Util.csproj",
+      "projectName": "Util",
+      "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Utils\\Util.csproj",
       "packagesPath": "C:\\Users\\Gabriel Moré\\.nuget\\packages\\",
       "outputPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Utils\\obj\\",
       "projectStyle": "PackageReference",
@@ -52,8 +52,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain\\Domain.csproj": {
-              "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain\\Domain.csproj"
+            "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Stock\\Domain.Stock.csproj": {
+              "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Stock\\Domain.Stock.csproj"
             }
           }
         }

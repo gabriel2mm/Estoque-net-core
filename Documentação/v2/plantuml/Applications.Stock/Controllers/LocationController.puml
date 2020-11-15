@@ -1,0 +1,11 @@
+@startuml
+class LocationController {
+    + LocationController(repository:IRepository<Location>)
+    + Get() : IEnumerable<Location>
+    + Get(id:Guid) : Location
+    + Post(location:Location) : void
+    + Put(id:Guid, value:Location) : void
+    + Delete(id:Guid) : void
+}
+ControllerBase <|-- LocationController
+@enduml

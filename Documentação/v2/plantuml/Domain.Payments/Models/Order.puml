@@ -1,0 +1,17 @@
+@startuml
+class Order {
+    + Clone() : Order
+    + Copy(order:Order) : void
+}
+class "ICollection`1"<T> {
+}
+Order --> "Id" Guid
+Order --> "OrderCode" String
+Order --> "Name" String
+Order --> "Email" String
+Order --> "CPF" String
+Order --> "Location" Location
+Order --> "Payment" PaymentModel
+Order --> "Products<Showcase>" "ICollection`1"
+Order --> "OrdersShowcases<OrdersShowcases>" "ICollection`1"
+@enduml

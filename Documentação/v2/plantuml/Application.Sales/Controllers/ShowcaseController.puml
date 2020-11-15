@@ -1,0 +1,12 @@
+@startuml
+class ShowcaseController {
+    + ShowcaseController(repository:IRepository<Showcase>)
+    + Search(q:String) : IEnumerable<Showcase>
+    + Get() : IEnumerable<Showcase>
+    + Get(id:Guid) : Showcase
+    + Post(showcase:Showcase) : void
+    + Put(id:Guid, value:Showcase) : void
+    + Delete(id:Guid) : void
+    + <<async>> UploadFile(file:IFormFile) : Task<String>
+}
+@enduml

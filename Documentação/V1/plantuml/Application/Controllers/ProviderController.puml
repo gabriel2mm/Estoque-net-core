@@ -1,0 +1,11 @@
+@startuml
+class ProviderController {
+    + ProviderController(repository:IRepository<Provider>)
+    + Get() : IEnumerable<Provider>
+    + Get(id:Guid) : Provider
+    + Post(provider:Provider) : void
+    + Put(id:Guid, value:Provider) : void
+    + Delete(id:Guid) : void
+}
+ControllerBase <|-- ProviderController
+@enduml

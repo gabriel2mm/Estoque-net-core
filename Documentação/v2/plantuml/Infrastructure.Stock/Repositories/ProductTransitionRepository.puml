@@ -1,0 +1,13 @@
+@startuml
+class ProductTransitionRepository {
+    + ProductTransitionRepository(context:EfContext)
+    + <<override>> GetAll() : IQueryable<ProductTransition>
+    + <<override>> Find(key:object[]) : ProductTransition
+    + <<override>> Add(obj:ProductTransition) : void
+    + <<override>> SaveAll() : void
+    + <<override>> Update(obj:ProductTransition) : void
+}
+class "Repository`1"<T> {
+}
+"Repository`1" "<ProductTransition>" <|-- ProductTransitionRepository
+@enduml

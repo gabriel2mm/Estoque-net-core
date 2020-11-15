@@ -1,0 +1,7 @@
+@startuml
+abstract class HandlerInvoiceBase {
+    + <<virtual>> Handle(type:TransitionType) : Invoice
+    + <<virtual>> SetNext(handler:IHandlerInvoice) : IHandlerInvoice
+}
+IHandlerInvoice <|-- HandlerInvoiceBase
+@enduml

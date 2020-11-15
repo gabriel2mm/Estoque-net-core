@@ -1,0 +1,6 @@
+@startuml
+interface IHandlerInvoice {
+    + SetNext(handler:IHandlerInvoice) : IHandlerInvoice
+    + Handle(type:TransitionType) : Invoice
+}
+@enduml

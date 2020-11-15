@@ -1,0 +1,13 @@
+@startuml
+class LocationMockRepository {
+    + LocationMockRepository()
+    + <<override>> GetAll() : IQueryable<Location>
+    + <<override>> Find(key:object[]) : Location
+    + <<override>> Add(obj:Location) : void
+    + <<override>> Update(obj:Location) : void
+    + <<override>> Delete(predicate:Func<Location, bool>) : void
+}
+class "MockRepository`1"<T> {
+}
+"MockRepository`1" "<Location>" <|-- LocationMockRepository
+@enduml

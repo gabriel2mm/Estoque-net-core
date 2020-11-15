@@ -1,0 +1,242 @@
+@startuml
+class Program {
+    + {static} Main(args:string[]) : void
+    + {static} CreateHostBuilder(args:string[]) : IHostBuilder
+}
+class Startup {
+    + Startup(configuration:IConfiguration)
+    + ConfigureServices(services:IServiceCollection) : void
+    + Configure(app:IApplicationBuilder, env:IWebHostEnvironment) : void
+}
+Startup --> "Configuration" IConfiguration
+class Tests {
+    + Setup() : void
+    + Test1() : void
+}
+class InvoiceController {
+    + InvoiceController(repository:IRepository<Invoice>)
+    + Get() : IEnumerable<Invoice>
+    + Get(id:Guid) : Invoice
+    + Post(invoice:Invoice) : void
+    + Put(id:Guid, value:Invoice) : void
+    + Delete(id:Guid) : void
+}
+ControllerBase <|-- InvoiceController
+class LocattionController {
+    + LocattionController(repository:IRepository<Location>)
+    + Get() : IEnumerable<Location>
+    + Get(id:Guid) : Location
+    + Post(location:Location) : void
+    + Put(id:Guid, value:Location) : void
+    + Delete(id:Guid) : void
+}
+ControllerBase <|-- LocattionController
+class ProductController {
+    + ProductController(repository:IRepository<Product>)
+    + Get() : IEnumerable<Product>
+    + Get(id:Guid) : Product
+    + Post(product:Product) : void
+    + Put(id:Guid, value:Product) : void
+    + Delete(id:Guid) : void
+}
+ControllerBase <|-- ProductController
+class ProductManagementController {
+    + ProductManagementController(repository:IRepository<ProductManagement>)
+    + Get() : IEnumerable<ProductManagement>
+    + Get(id:Guid) : ProductManagement
+    + Post(productManagement:ProductManagement) : void
+    + Put(id:Guid, value:ProductManagement) : void
+    + Delete(id:Guid) : void
+}
+ControllerBase <|-- ProductManagementController
+class ProviderController {
+    + ProviderController(repository:IRepository<Provider>)
+    + Get() : IEnumerable<Provider>
+    + Get(id:Guid) : Provider
+    + Post(provider:Provider) : void
+    + Put(id:Guid, value:Provider) : void
+    + Delete(id:Guid) : void
+}
+ControllerBase <|-- ProviderController
+class WarehouseController {
+    + WarehouseController(repository:IRepository<Warehouse>)
+    + Get() : IEnumerable<Warehouse>
+    + Get(id:Guid) : Warehouse
+    + Post(warehouse:Warehouse) : void
+    + Put(id:Guid, value:Warehouse) : void
+    + Delete(id:Guid) : void
+}
+ControllerBase <|-- WarehouseController
+enum InvoiceType {
+    COMPRA,
+    VENDA,
+    SAIDA_INTERNA,
+    SAIDA_ESTOQUE,
+    SAIDA_DEVOLUCAO,
+    SAIDA_PERDA,
+}
+interface IInvoice {
+    HandlerInvoice() : String
+}
+interface "IRepository`1"<TEntity> {
+    GetAll() : IQueryable<TEntity>
+    Get(predicate:Func<TEntity, bool>) : IQueryable<TEntity>
+    Find(key:object[]) : TEntity
+    Update(obj:TEntity) : void
+    SaveAll() : void
+    Add(obj:TEntity) : void
+    Delete(predicate:Func<TEntity, bool>) : void
+}
+class Invoice {
+    + Clone() : Invoice
+    + Copy(invoice:Invoice) : void
+}
+Invoice --> "Id" Guid
+Invoice --> "Name" String
+Invoice --> "IdentificationNumber" String
+Invoice --> "Emission" DateTime
+Invoice --> "Product" Product
+Invoice --> "InvoiceType" InvoiceType
+class Location {
+    + Number : int <<get>> <<set>>
+    + Clone() : Location
+    + Copy(location:Location) : void
+}
+class "ICollection`1"<T> {
+}
+Location --> "Id" Guid
+Location --> "Name" String
+Location --> "State" String
+Location --> "City" String
+Location --> "District" String
+Location --> "Street" String
+Location --> "CEP" String
+Location --> "Complement" String
+Location --> "Warehouses<Warehouse>" "ICollection`1"
+class Product {
+    + Price : double <<get>> <<set>>
+    + Cost : double <<get>> <<set>>
+    + Clone() : Product
+    + Copy(product:Product) : void
+}
+Product --> "Id" Guid
+Product --> "Name" String
+Product --> "Unit" String
+Product --> "Measure" String
+Product --> "Provider" Provider
+Product --> "Input" DateTime
+Product --> "Output" DateTime
+class ProductManagement {
+    + AverageCost : double <<get>> <<set>>
+    + Amount : int <<get>> <<set>>
+    + Clone() : ProductManagement
+    + Copy(productControl:ProductManagement) : void
+}
+ProductManagement --> "Id" Guid
+ProductManagement --> "Product" Product
+ProductManagement --> "Warehouse" Warehouse
+class Provider {
+    + Clone() : Provider
+    + Copy(provider:Provider) : void
+}
+Provider --> "Id" Guid
+Provider --> "Name" String
+class Warehouse {
+    + ThirdParty : bool <<get>> <<set>>
+    + Clone() : Warehouse
+    + Copy(warehouse:Warehouse) : void
+}
+class "ICollection`1"<T> {
+}
+Warehouse --> "Id" Guid
+Warehouse --> "ProductsControl<ProductManagement>" "ICollection`1"
+Warehouse --> "Location" Location
+class EfContext {
+    + EfContext(options:DbContextOptions)
+}
+class "DbSet`1"<T> {
+}
+DbContext <|-- EfContext
+EfContext --> "Locations<Location>" "DbSet`1"
+EfContext --> "Products<Product>" "DbSet`1"
+EfContext --> "ProductControls<ProductManagement>" "DbSet`1"
+EfContext --> "Providers<Provider>" "DbSet`1"
+EfContext --> "Warehouses<Warehouse>" "DbSet`1"
+EfContext --> "Invoices<Invoice>" "DbSet`1"
+class Initial <<partial>> {
+}
+Migration <|-- Initial
+class Initial <<partial>> {
+}
+class EfContextModelSnapshot <<partial>> {
+}
+ModelSnapshot <|-- EfContextModelSnapshot
+class InvoiceRepository {
+    + InvoiceRepository(context:EfContext)
+    + <<override>> GetAll() : IQueryable<Invoice>
+    + <<override>> Find(key:object[]) : Invoice
+    + <<override>> Update(obj:Invoice) : void
+}
+class "Repository`1"<T> {
+}
+"Repository`1" "<Invoice>" <|-- InvoiceRepository
+class LocationRepository {
+    + LocationRepository(context:EfContext)
+    + <<override>> Update(obj:Location) : void
+    + <<override>> GetAll() : IQueryable<Location>
+    + <<override>> Find(key:object[]) : Location
+}
+class "Repository`1"<T> {
+}
+"Repository`1" "<Location>" <|-- LocationRepository
+class ProductControlRepository {
+    + ProductControlRepository(context:EfContext)
+    + <<override>> Update(obj:ProductManagement) : void
+    + <<override>> GetAll() : IQueryable<ProductManagement>
+    + <<override>> Find(key:object[]) : ProductManagement
+}
+class "Repository`1"<T> {
+}
+"Repository`1" "<ProductManagement>" <|-- ProductControlRepository
+class ProductRepository {
+    + ProductRepository(context:EfContext)
+    + <<override>> GetAll() : IQueryable<Product>
+    + <<override>> Find(key:object[]) : Product
+    + <<override>> Update(obj:Product) : void
+}
+class "Repository`1"<T> {
+}
+"Repository`1" "<Product>" <|-- ProductRepository
+class ProviderRepository {
+    + ProviderRepository(context:EfContext)
+}
+class "Repository`1"<T> {
+}
+"Repository`1" "<Provider>" <|-- ProviderRepository
+class "Repository`1"<TEntity> {
+    + Repository()
+    + Repository(context:EfContext)
+    + <<virtual>> GetContext() : EfContext
+    + <<virtual>> GetAll() : IQueryable<TEntity>
+    + <<virtual>> Get(predicate:Func<TEntity, bool>) : IQueryable<TEntity>
+    + <<virtual>> Find(key:object[]) : TEntity
+    + <<virtual>> Update(obj:TEntity) : void
+    + <<virtual>> SaveAll() : void
+    + <<virtual>> Add(obj:TEntity) : void
+    + <<virtual>> Delete(predicate:Func<TEntity, bool>) : void
+    + Dispose() : void
+}
+class "IRepository`1"<T> {
+}
+"IRepository`1" "<TEntity>" <|-- "Repository`1"
+IDisposable <|-- "Repository`1"
+class WareHouseRepository {
+    + WareHouseRepository(context:EfContext)
+    + <<override>> GetAll() : IQueryable<Warehouse>
+    + <<override>> Find(key:object[]) : Warehouse
+    + <<override>> Update(obj:Warehouse) : void
+}
+class "Repository`1"<T> {
+}
+"Repository`1" "<Warehouse>" <|-- WareHouseRepository
+@enduml

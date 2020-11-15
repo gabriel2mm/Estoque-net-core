@@ -13,7 +13,7 @@ namespace Stock.Utils.Helpers
             if (type == TransitionType.OUTPUT)
             {
                 Random random = new Random();
-                int r = random.Next(1000000000, 999999999);
+                int r = random.Next(100000, 9999999);
 
                 Invoice invoice = new Invoice()
                 {

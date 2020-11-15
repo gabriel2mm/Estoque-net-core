@@ -1,0 +1,8 @@
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Comuns\bin\Debug\netcoreapp3.1\Domain.Comuns.deps.json
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Comuns\bin\Debug\netcoreapp3.1\Domain.Comuns.dll
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Comuns\bin\Debug\netcoreapp3.1\Domain.Comuns.pdb
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Comuns\obj\Debug\netcoreapp3.1\Domain.Comuns.AssemblyInfoInputs.cache
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Comuns\obj\Debug\netcoreapp3.1\Domain.Comuns.AssemblyInfo.cs
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Comuns\obj\Debug\netcoreapp3.1\Domain.Comuns.csproj.CoreCompileInputs.cache
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Comuns\obj\Debug\netcoreapp3.1\Domain.Comuns.dll
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Comuns\obj\Debug\netcoreapp3.1\Domain.Comuns.pdb

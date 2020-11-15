@@ -4,14 +4,14 @@
     "Y:\\Faculdade\\Estoque\\ModuloEstoque\\XUnitTests\\XUnitTests.csproj": {}
   },
   "projects": {
-    "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Application\\Application.csproj": {
+    "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Applications.Stock\\Application.Stock.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Application\\Application.csproj",
-        "projectName": "Application",
-        "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Application\\Application.csproj",
+        "projectUniqueName": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Applications.Stock\\Application.Stock.csproj",
+        "projectName": "Application.Stock",
+        "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Applications.Stock\\Application.Stock.csproj",
         "packagesPath": "C:\\Users\\Gabriel Moré\\.nuget\\packages\\",
-        "outputPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Application\\obj\\",
+        "outputPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Applications.Stock\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gabriel Moré\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,14 +27,26 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain\\Domain.csproj": {
-                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain\\Domain.csproj"
+              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Comuns\\Domain.Comuns.csproj": {
+                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Comuns\\Domain.Comuns.csproj"
               },
-              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure\\Infrastructure.csproj"
+              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Payments\\Domain.Sales.csproj": {
+                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Payments\\Domain.Sales.csproj"
               },
-              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Utils\\Utils.csproj": {
-                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Utils\\Utils.csproj"
+              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Stock\\Domain.Stock.csproj": {
+                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Stock\\Domain.Stock.csproj"
+              },
+              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Comuns\\Infrastructure.Comuns.csproj": {
+                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Comuns\\Infrastructure.Comuns.csproj"
+              },
+              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Sales\\Infrastructure.Sales.csproj": {
+                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Sales\\Infrastructure.Sales.csproj"
+              },
+              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Stock\\Infrastructure.Stock.csproj": {
+                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Stock\\Infrastructure.Stock.csproj"
+              },
+              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Utils\\Util.csproj": {
+                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Utils\\Util.csproj"
               }
             }
           }
@@ -109,14 +121,14 @@
         }
       }
     },
-    "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain\\Domain.csproj": {
+    "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Comuns\\Domain.Comuns.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain\\Domain.csproj",
-        "projectName": "Domain",
-        "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain\\Domain.csproj",
+        "projectUniqueName": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Comuns\\Domain.Comuns.csproj",
+        "projectName": "Domain.Comuns",
+        "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Comuns\\Domain.Comuns.csproj",
         "packagesPath": "C:\\Users\\Gabriel Moré\\.nuget\\packages\\",
-        "outputPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain\\obj\\",
+        "outputPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Comuns\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gabriel Moré\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -161,14 +173,14 @@
         }
       }
     },
-    "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure\\Infrastructure.csproj": {
+    "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Payments\\Domain.Sales.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure\\Infrastructure.csproj",
-        "projectName": "Infrastructure",
-        "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Payments\\Domain.Sales.csproj",
+        "projectName": "Domain.Sales",
+        "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Payments\\Domain.Sales.csproj",
         "packagesPath": "C:\\Users\\Gabriel Moré\\.nuget\\packages\\",
-        "outputPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure\\obj\\",
+        "outputPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Payments\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gabriel Moré\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -184,8 +196,122 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain\\Domain.csproj": {
-                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain\\Domain.csproj"
+              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Stock\\Domain.Stock.csproj": {
+                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Stock\\Domain.Stock.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Stock\\Domain.Stock.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Stock\\Domain.Stock.csproj",
+        "projectName": "Domain.Stock",
+        "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Stock\\Domain.Stock.csproj",
+        "packagesPath": "C:\\Users\\Gabriel Moré\\.nuget\\packages\\",
+        "outputPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Stock\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Gabriel Moré\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Comuns\\Infrastructure.Comuns.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Comuns\\Infrastructure.Comuns.csproj",
+        "projectName": "Infrastructure.Comuns",
+        "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Comuns\\Infrastructure.Comuns.csproj",
+        "packagesPath": "C:\\Users\\Gabriel Moré\\.nuget\\packages\\",
+        "outputPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Comuns\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Gabriel Moré\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Comuns\\Domain.Comuns.csproj": {
+                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Comuns\\Domain.Comuns.csproj"
+              },
+              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Payments\\Domain.Sales.csproj": {
+                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Payments\\Domain.Sales.csproj"
+              },
+              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Stock\\Domain.Stock.csproj": {
+                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Stock\\Domain.Stock.csproj"
               }
             }
           }
@@ -220,6 +346,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.8, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -241,12 +375,130 @@
         }
       }
     },
-    "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Utils\\Utils.csproj": {
+    "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Sales\\Infrastructure.Sales.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Utils\\Utils.csproj",
-        "projectName": "Utils",
-        "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Utils\\Utils.csproj",
+        "projectUniqueName": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Sales\\Infrastructure.Sales.csproj",
+        "projectName": "Infrastructure.Sales",
+        "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Sales\\Infrastructure.Sales.csproj",
+        "packagesPath": "C:\\Users\\Gabriel Moré\\.nuget\\packages\\",
+        "outputPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Sales\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Gabriel Moré\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Payments\\Domain.Sales.csproj": {
+                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Payments\\Domain.Sales.csproj"
+              },
+              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Comuns\\Infrastructure.Comuns.csproj": {
+                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Comuns\\Infrastructure.Comuns.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Stock\\Infrastructure.Stock.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Stock\\Infrastructure.Stock.csproj",
+        "projectName": "Infrastructure.Stock",
+        "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Stock\\Infrastructure.Stock.csproj",
+        "packagesPath": "C:\\Users\\Gabriel Moré\\.nuget\\packages\\",
+        "outputPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Stock\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Gabriel Moré\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Stock\\Domain.Stock.csproj": {
+                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Stock\\Domain.Stock.csproj"
+              },
+              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Comuns\\Infrastructure.Comuns.csproj": {
+                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure.Comuns\\Infrastructure.Comuns.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Utils\\Util.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Utils\\Util.csproj",
+        "projectName": "Util",
+        "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Utils\\Util.csproj",
         "packagesPath": "C:\\Users\\Gabriel Moré\\.nuget\\packages\\",
         "outputPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Utils\\obj\\",
         "projectStyle": "PackageReference",
@@ -264,8 +516,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain\\Domain.csproj": {
-                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain\\Domain.csproj"
+              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Stock\\Domain.Stock.csproj": {
+                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Stock\\Domain.Stock.csproj"
               }
             }
           }
@@ -320,14 +572,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Application\\Application.csproj": {
-                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Application\\Application.csproj"
+              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Applications.Stock\\Application.Stock.csproj": {
+                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Applications.Stock\\Application.Stock.csproj"
               },
-              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain\\Domain.csproj": {
-                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain\\Domain.csproj"
-              },
-              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Infrastructure\\Infrastructure.csproj"
+              "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Stock\\Domain.Stock.csproj": {
+                "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Stock\\Domain.Stock.csproj"
               }
             }
           }

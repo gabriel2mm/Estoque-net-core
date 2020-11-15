@@ -1,0 +1,6 @@
+@startuml
+class ChainOutOfStockInvoice {
+    + <<override>> Handle(type:TransitionType) : Invoice
+}
+HandlerInvoiceBase <|-- ChainOutOfStockInvoice
+@enduml

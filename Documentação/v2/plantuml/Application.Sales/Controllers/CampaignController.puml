@@ -1,0 +1,11 @@
+@startuml
+class CampaignController {
+    + CampaignController(repository:IRepository<Campaign>)
+    + Get() : IEnumerable<Campaign>
+    + Get(id:Guid) : Campaign
+    + Post(campaign:Campaign) : void
+    + Put(id:Guid, value:Campaign) : void
+    + Delete(id:Guid) : void
+}
+ControllerBase <|-- CampaignController
+@enduml

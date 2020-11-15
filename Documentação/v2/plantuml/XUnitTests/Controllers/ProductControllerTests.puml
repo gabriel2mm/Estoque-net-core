@@ -1,0 +1,10 @@
+@startuml
+class ProductControllerTests {
+    + ProductControllerTests()
+    + Get() : void
+    + Get_With_Id() : void
+    + Post() : void
+    + Put() : void
+    + Delete() : void
+}
+@enduml

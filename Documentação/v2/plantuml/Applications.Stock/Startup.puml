@@ -1,0 +1,9 @@
+@startuml
+class Startup {
+    <<readonly>> MyAllowSpecificOrigins : string = "_myAllowSpecificOrigins"
+    + Startup(configuration:IConfiguration)
+    + ConfigureServices(services:IServiceCollection) : void
+    + Configure(app:IApplicationBuilder, env:IWebHostEnvironment) : void
+}
+Startup --> "Configuration" IConfiguration
+@enduml

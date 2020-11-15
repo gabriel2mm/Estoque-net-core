@@ -1,0 +1,16 @@
+@startuml
+class "MockRepository`1"<TEntity> {
+    + <<virtual>> GetAll() : IQueryable<TEntity>
+    + <<virtual>> Get(predicate:Func<TEntity, bool>) : IQueryable<TEntity>
+    + <<virtual>> Find(key:object[]) : TEntity
+    + <<virtual>> Update(obj:TEntity) : void
+    + <<virtual>> SaveAll() : void
+    + <<virtual>> Add(obj:TEntity) : void
+    + <<virtual>> Delete(predicate:Func<TEntity, bool>) : void
+    + Dispose() : void
+}
+class "IRepository`1"<T> {
+}
+"IRepository`1" "<TEntity>" <|-- "MockRepository`1"
+IDisposable <|-- "MockRepository`1"
+@enduml

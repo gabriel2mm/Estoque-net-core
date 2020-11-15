@@ -1,0 +1,9 @@
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Stock\bin\Debug\netcoreapp3.1\Domain.Stock.deps.json
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Stock\bin\Debug\netcoreapp3.1\Domain.Stock.dll
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Stock\bin\Debug\netcoreapp3.1\Domain.Stock.pdb
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Stock\obj\Debug\netcoreapp3.1\Domain.Stock.AssemblyInfoInputs.cache
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Stock\obj\Debug\netcoreapp3.1\Domain.Stock.AssemblyInfo.cs
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Stock\obj\Debug\netcoreapp3.1\Domain.Stock.csproj.CoreCompileInputs.cache
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Stock\obj\Debug\netcoreapp3.1\Domain.Stock.dll
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Stock\obj\Debug\netcoreapp3.1\Domain.Stock.pdb
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Stock\obj\Debug\netcoreapp3.1\Domain.Stock.csprojAssemblyReference.cache

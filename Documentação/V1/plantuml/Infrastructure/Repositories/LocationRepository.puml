@@ -1,0 +1,11 @@
+@startuml
+class LocationRepository {
+    + LocationRepository(context:EfContext)
+    + <<override>> Update(obj:Location) : void
+    + <<override>> GetAll() : IQueryable<Location>
+    + <<override>> Find(key:object[]) : Location
+}
+class "Repository`1"<T> {
+}
+"Repository`1" "<Location>" <|-- LocationRepository
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+class ProductController {
+    + ProductController(repository:IRepository<Product>)
+    + Get() : IEnumerable<Product>
+    + Get(id:Guid) : Product
+    + Post(product:Product) : void
+    + Put(id:Guid, value:Product) : void
+    + Delete(id:Guid) : void
+}
+ControllerBase <|-- ProductController
+@enduml

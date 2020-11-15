@@ -1,0 +1,10 @@
+@startuml
+enum TransitionType {
+    INPUT,
+    OUTPUT,
+    INTERNAL_OUTPUT,
+    OUT_OF_STOCK,
+    RETURN_OUTPUT,
+    LOSS_OUTPUT,
+}
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+class ReservationController {
+    + ReservationController(repository:IRepository<Reservation>)
+    + Reserve(json:dynamic) : string
+    + CancelReserve(json:dynamic) : void
+}
+ControllerBase <|-- ReservationController
+@enduml

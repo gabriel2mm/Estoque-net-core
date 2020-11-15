@@ -1,0 +1,8 @@
+@startuml
+class BranchOfficeRepository {
+    + BranchOfficeRepository(context:EfContext)
+}
+class "Repository`1"<T> {
+}
+"Repository`1" "<BranchOffice>" <|-- BranchOfficeRepository
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+class ProductManagementController {
+    + ProductManagementController(repository:IRepository<ProductManagement>)
+    + Get() : IEnumerable<ProductManagement>
+    + Get(id:Guid) : ProductManagement
+    + Post(productManagement:ProductManagement) : void
+    + Put(id:Guid, value:ProductManagement) : void
+    + Delete(id:Guid) : void
+}
+ControllerBase <|-- ProductManagementController
+@enduml

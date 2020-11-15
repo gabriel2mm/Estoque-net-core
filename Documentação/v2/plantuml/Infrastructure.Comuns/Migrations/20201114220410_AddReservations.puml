@@ -1,0 +1,5 @@
+@startuml
+class AddReservations <<partial>> {
+}
+Migration <|-- AddReservations
+@enduml

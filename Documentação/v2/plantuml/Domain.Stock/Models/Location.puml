@@ -1,0 +1,18 @@
+@startuml
+class Location {
+    + Number : int <<get>> <<set>>
+    + Clone() : Location
+    + Copy(location:Location) : void
+}
+class "ICollection`1"<T> {
+}
+Location --> "Id" Guid
+Location --> "Name" String
+Location --> "State" String
+Location --> "City" String
+Location --> "District" String
+Location --> "Street" String
+Location --> "CEP" String
+Location --> "Complement" String
+Location --> "Warehouses<Warehouse>" "ICollection`1"
+@enduml

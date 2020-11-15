@@ -1,0 +1,15 @@
+@startuml
+class Product {
+    + Price : double <<get>> <<set>>
+    + Cost : double <<get>> <<set>>
+    + Clone() : Product
+    + Copy(product:Product) : void
+}
+Product --> "Id" Guid
+Product --> "Name" String
+Product --> "Unit" String
+Product --> "Measure" String
+Product --> "Provider" Provider
+Product --> "Input" DateTime
+Product --> "Output" DateTime
+@enduml

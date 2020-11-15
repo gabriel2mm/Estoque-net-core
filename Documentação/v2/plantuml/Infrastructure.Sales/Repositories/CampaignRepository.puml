@@ -1,0 +1,13 @@
+@startuml
+class CampaignRepository {
+    + CampaignRepository(context:EfContext)
+    + <<override>> GetAll() : IQueryable<Campaign>
+    + <<override>> Add(obj:Campaign) : void
+    + <<override>> SaveAll() : void
+    + <<override>> Find(key:object[]) : Campaign
+    + <<override>> Update(obj:Campaign) : void
+}
+class "Repository`1"<T> {
+}
+"Repository`1" "<Campaign>" <|-- CampaignRepository
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+class ProductManagementMockRepository {
+    + ProductManagementMockRepository()
+    + <<override>> GetAll() : IQueryable<ProductManagement>
+    + <<override>> Find(key:object[]) : ProductManagement
+    + <<override>> Add(obj:ProductManagement) : void
+    + <<override>> Update(obj:ProductManagement) : void
+    + <<override>> Delete(predicate:Func<ProductManagement, bool>) : void
+}
+class "MockRepository`1"<T> {
+}
+"MockRepository`1" "<ProductManagement>" <|-- ProductManagementMockRepository
+@enduml

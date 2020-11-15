@@ -1,0 +1,12 @@
+@startuml
+class ProductManagement {
+    + AverageCost : double <<get>> <<set>>
+    + TotalCost : double <<get>> <<set>>
+    + Amount : int <<get>> <<set>>
+    + Clone() : ProductManagement
+    + Copy(productControl:ProductManagement) : void
+}
+ProductManagement --> "Id" Guid
+ProductManagement --> "Product" Product
+ProductManagement --> "Warehouse" Warehouse
+@enduml

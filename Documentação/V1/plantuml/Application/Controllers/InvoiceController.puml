@@ -1,0 +1,11 @@
+@startuml
+class InvoiceController {
+    + InvoiceController(repository:IRepository<Invoice>)
+    + Get() : IEnumerable<Invoice>
+    + Get(id:Guid) : Invoice
+    + Post(invoice:Invoice) : void
+    + Put(id:Guid, value:Invoice) : void
+    + Delete(id:Guid) : void
+}
+ControllerBase <|-- InvoiceController
+@enduml

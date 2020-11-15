@@ -1,0 +1,6 @@
+@startuml
+enum Status {
+    RESERVADO=1,
+    CANCELADO=2,
+}
+@enduml

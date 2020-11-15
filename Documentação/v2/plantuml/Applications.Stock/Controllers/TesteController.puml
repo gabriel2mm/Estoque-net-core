@@ -1,0 +1,8 @@
+@startuml
+class TesteController {
+    + TesteController(locationRepository:IRepository<Location>, productRepository:IRepository<Product>, productManagementRepository:IRepository<ProductManagement>, warehouseRepository:IRepository<Warehouse>, providerRepository:IRepository<Provider>, productProviderRepository:IRepository<ProductProvider>, productTranstion:IRepository<ProductTransition>)
+    + CadastrarExemplos() : void
+    + CadastrarVitrine() : void
+}
+ControllerBase <|-- TesteController
+@enduml

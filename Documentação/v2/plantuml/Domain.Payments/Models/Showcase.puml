@@ -1,0 +1,15 @@
+@startuml
+class Showcase {
+    + Quantidade : int <<get>> <<set>>
+    + Clone() : Showcase
+    + Copy(showcase:Showcase) : void
+}
+class "ICollection`1"<T> {
+}
+Showcase --> "Id" Guid
+Showcase --> "ProductManagement" ProductManagement
+Showcase --> "Description" String
+Showcase --> "Image" String
+Showcase --> "Color" String
+Showcase --> "OrderShowcases<OrdersShowcases>" "ICollection`1"
+@enduml

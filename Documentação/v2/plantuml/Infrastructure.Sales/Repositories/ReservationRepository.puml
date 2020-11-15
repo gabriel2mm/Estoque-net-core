@@ -1,0 +1,13 @@
+@startuml
+class ReservationRepository {
+    + ReservationRepository(context:EfContext)
+    + <<override>> GetAll() : IQueryable<Reservation>
+    + <<override>> Add(obj:Reservation) : void
+    + <<override>> SaveAll() : void
+    + <<override>> Find(key:object[]) : Reservation
+    + <<override>> Update(obj:Reservation) : void
+}
+class "Repository`1"<T> {
+}
+"Repository`1" "<Reservation>" <|-- ReservationRepository
+@enduml

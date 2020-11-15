@@ -1,0 +1,12 @@
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Payments\bin\Debug\netcoreapp3.1\Domain.Sales.deps.json
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Payments\bin\Debug\netcoreapp3.1\Domain.Sales.dll
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Payments\bin\Debug\netcoreapp3.1\Domain.Sales.pdb
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Payments\bin\Debug\netcoreapp3.1\Domain.Stock.dll
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Payments\bin\Debug\netcoreapp3.1\Domain.Stock.pdb
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Payments\obj\Debug\netcoreapp3.1\Domain.Sales.csprojAssemblyReference.cache
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Payments\obj\Debug\netcoreapp3.1\Domain.Sales.AssemblyInfoInputs.cache
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Payments\obj\Debug\netcoreapp3.1\Domain.Sales.AssemblyInfo.cs
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Payments\obj\Debug\netcoreapp3.1\Domain.Sales.csproj.CoreCompileInputs.cache
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Payments\obj\Debug\netcoreapp3.1\Domain.Sales.csproj.CopyComplete
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Payments\obj\Debug\netcoreapp3.1\Domain.Sales.dll
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Payments\obj\Debug\netcoreapp3.1\Domain.Sales.pdb

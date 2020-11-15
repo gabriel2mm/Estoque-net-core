@@ -1,0 +1,11 @@
+@startuml
+class BranchOffice {
+    + Clone() : BranchOffice
+    + Copy(branchOffice:BranchOffice) : void
+}
+class "ICollection`1"<T> {
+}
+BranchOffice --> "Id" Guid
+BranchOffice --> "Name" String
+BranchOffice --> "Warehouses<Warehouse>" "ICollection`1"
+@enduml

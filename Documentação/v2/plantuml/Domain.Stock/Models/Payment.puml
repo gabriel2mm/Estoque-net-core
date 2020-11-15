@@ -1,0 +1,11 @@
+@startuml
+class PaymentModel {
+    + Payment : string <<get>> <<set>>
+    + Card : string <<get>> <<set>>
+}
+PaymentModel --> "Id" Guid
+PaymentModel --> "DueDate" String
+PaymentModel --> "CCV" String
+PaymentModel --> "Plots" String
+PaymentModel --> "BilletNumber" String
+@enduml

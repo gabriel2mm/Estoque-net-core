@@ -1,0 +1,13 @@
+@startuml
+class InvoiceMockRepository {
+    + InvoiceMockRepository()
+    + <<override>> GetAll() : IQueryable<Invoice>
+    + <<override>> Find(key:object[]) : Invoice
+    + <<override>> Add(obj:Invoice) : void
+    + <<override>> Update(obj:Invoice) : void
+    + <<override>> Delete(predicate:Func<Invoice, bool>) : void
+}
+class "MockRepository`1"<T> {
+}
+"MockRepository`1" "<Invoice>" <|-- InvoiceMockRepository
+@enduml

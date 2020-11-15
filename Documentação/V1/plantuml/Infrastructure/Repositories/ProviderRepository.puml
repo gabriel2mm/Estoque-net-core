@@ -1,0 +1,8 @@
+@startuml
+class ProviderRepository {
+    + ProviderRepository(context:EfContext)
+}
+class "Repository`1"<T> {
+}
+"Repository`1" "<Provider>" <|-- ProviderRepository
+@enduml

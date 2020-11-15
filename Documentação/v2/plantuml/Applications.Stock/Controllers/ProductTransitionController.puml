@@ -1,0 +1,9 @@
+@startuml
+class ProductTransitionController {
+    + ProductTransitionController(repository:IRepository<ProductTransition>)
+    + Get() : IEnumerable<ProductTransition>
+    + Get(id:Guid) : ProductTransition
+    + Delete(id:Guid) : void
+}
+ControllerBase <|-- ProductTransitionController
+@enduml

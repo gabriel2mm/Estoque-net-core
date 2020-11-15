@@ -1,0 +1,11 @@
+@startuml
+class Provider {
+    + Clone() : Provider
+    + Copy(provider:Provider) : void
+}
+class "ICollection`1"<T> {
+}
+Provider --> "Id" Guid
+Provider --> "Name" String
+Provider --> "Products<ProductProvider>" "ICollection`1"
+@enduml

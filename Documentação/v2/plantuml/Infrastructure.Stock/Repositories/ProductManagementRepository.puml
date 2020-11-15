@@ -1,0 +1,11 @@
+@startuml
+class ProductManagementRepository {
+    + ProductManagementRepository(context:EfContext)
+    + <<override>> Update(obj:ProductManagement) : void
+    + <<override>> GetAll() : IQueryable<ProductManagement>
+    + <<override>> Find(key:object[]) : ProductManagement
+}
+class "Repository`1"<T> {
+}
+"Repository`1" "<ProductManagement>" <|-- ProductManagementRepository
+@enduml

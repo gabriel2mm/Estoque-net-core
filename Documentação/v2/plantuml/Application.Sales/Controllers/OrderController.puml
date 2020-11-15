@@ -1,0 +1,11 @@
+@startuml
+class OrderController {
+    + OrderController(repository:IRepository<Order>, transitionRepository:IRepository<ProductTransition>, productManagementRepository:IRepository<ProductManagement>, orderShowCaseRepository:IRepository<OrdersShowcases>)
+    + Get() : IEnumerable<Order>
+    + Get(id:Guid) : Order
+    + Post(order:Order) : String
+    + Put(id:Guid, value:Order) : void
+    + Delete(id:Guid) : void
+}
+ControllerBase <|-- OrderController
+@enduml

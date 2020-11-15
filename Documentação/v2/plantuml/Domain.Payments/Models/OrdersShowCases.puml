@@ -1,0 +1,8 @@
+@startuml
+class OrdersShowcases {
+}
+OrdersShowcases --> "OrderId" Guid
+OrdersShowcases --> "Order" Order
+OrdersShowcases --> "ShowcaseId" Guid
+OrdersShowcases --> "ShowCase" Showcase
+@enduml

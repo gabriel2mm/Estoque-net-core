@@ -1,0 +1,8 @@
+@startuml
+class ProductProvider {
+}
+ProductProvider --> "ProductId" Guid
+ProductProvider --> "Product" Product
+ProductProvider --> "ProviderId" Guid
+ProductProvider --> "Provider" Provider
+@enduml

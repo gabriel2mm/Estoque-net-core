@@ -1,0 +1,8 @@
+@startuml
+class Reservation {
+    + Quantity : int <<get>> <<set>>
+}
+Reservation --> "Id" Guid
+Reservation --> "Status" Status
+Reservation --> "ProductManagement" ProductManagement
+@enduml

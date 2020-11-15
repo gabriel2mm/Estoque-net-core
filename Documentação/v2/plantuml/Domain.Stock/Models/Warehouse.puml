@@ -1,0 +1,14 @@
+@startuml
+class Warehouse {
+    + ThirdParty : bool <<get>> <<set>>
+    + Clone() : Warehouse
+    + Copy(warehouse:Warehouse) : void
+}
+class "ICollection`1"<T> {
+}
+Warehouse --> "Id" Guid
+Warehouse --> "WarehouseCode" String
+Warehouse --> "BranchOffice" BranchOffice
+Warehouse --> "ProductManagements<ProductManagement>" "ICollection`1"
+Warehouse --> "Location" Location
+@enduml

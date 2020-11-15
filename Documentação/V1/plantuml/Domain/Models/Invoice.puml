@@ -1,0 +1,12 @@
+@startuml
+class Invoice {
+    + Clone() : Invoice
+    + Copy(invoice:Invoice) : void
+}
+Invoice --> "Id" Guid
+Invoice --> "Name" String
+Invoice --> "IdentificationNumber" String
+Invoice --> "Emission" DateTime
+Invoice --> "Product" Product
+Invoice --> "InvoiceType" InvoiceType
+@enduml

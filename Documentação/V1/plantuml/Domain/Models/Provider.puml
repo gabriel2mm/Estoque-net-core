@@ -1,0 +1,8 @@
+@startuml
+class Provider {
+    + Clone() : Provider
+    + Copy(provider:Provider) : void
+}
+Provider --> "Id" Guid
+Provider --> "Name" String
+@enduml

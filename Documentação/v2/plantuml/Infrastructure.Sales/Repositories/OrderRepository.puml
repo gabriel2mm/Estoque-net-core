@@ -1,0 +1,13 @@
+@startuml
+class OrderRepository {
+    + OrderRepository(context:EfContext)
+    + <<override>> GetAll() : IQueryable<Order>
+    + <<override>> Add(obj:Order) : void
+    + <<override>> SaveAll() : void
+    + <<override>> Find(key:object[]) : Order
+    + <<override>> Update(obj:Order) : void
+}
+class "Repository`1"<T> {
+}
+"Repository`1" "<Order>" <|-- OrderRepository
+@enduml

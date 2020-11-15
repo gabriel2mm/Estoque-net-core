@@ -1,0 +1,11 @@
+@startuml
+class BranchOfficeController {
+    + BranchOfficeController(repository:IRepository<BranchOffice>)
+    + Get() : IEnumerable<BranchOffice>
+    + Get(id:Guid) : BranchOffice
+    + Post(branchOffice:BranchOffice) : void
+    + Put(id:Guid, value:BranchOffice) : void
+    + Delete(id:Guid) : void
+}
+ControllerBase <|-- BranchOfficeController
+@enduml

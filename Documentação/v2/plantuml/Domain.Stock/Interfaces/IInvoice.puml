@@ -1,0 +1,6 @@
+@startuml
+interface IInvoice {
+    CreateInvoice() : Invoice
+    ViewInvoice() : String
+}
+@enduml

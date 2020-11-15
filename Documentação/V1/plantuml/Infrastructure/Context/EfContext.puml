@@ -1,0 +1,14 @@
+@startuml
+class EfContext {
+    + EfContext(options:DbContextOptions)
+}
+class "DbSet`1"<T> {
+}
+DbContext <|-- EfContext
+EfContext --> "Locations<Location>" "DbSet`1"
+EfContext --> "Products<Product>" "DbSet`1"
+EfContext --> "ProductControls<ProductManagement>" "DbSet`1"
+EfContext --> "Providers<Provider>" "DbSet`1"
+EfContext --> "Warehouses<Warehouse>" "DbSet`1"
+EfContext --> "Invoices<Invoice>" "DbSet`1"
+@enduml

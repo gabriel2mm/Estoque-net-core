@@ -1,0 +1,19 @@
+@startuml
+class "Repository`1"<TEntity> {
+    + Repository()
+    + Repository(context:EfContext)
+    + <<virtual>> GetContext() : EfContext
+    + <<virtual>> GetAll() : IQueryable<TEntity>
+    + <<virtual>> Get(predicate:Func<TEntity, bool>) : IQueryable<TEntity>
+    + <<virtual>> Find(key:object[]) : TEntity
+    + <<virtual>> Update(obj:TEntity) : void
+    + <<virtual>> SaveAll() : void
+    + <<virtual>> Add(obj:TEntity) : void
+    + <<virtual>> Delete(predicate:Func<TEntity, bool>) : void
+    + Dispose() : void
+}
+class "IRepository`1"<T> {
+}
+"IRepository`1" "<TEntity>" <|-- "Repository`1"
+IDisposable <|-- "Repository`1"
+@enduml
