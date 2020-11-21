@@ -2207,6 +2207,19 @@
           "bin/placeholder/Domain.Comuns.dll": {}
         }
       },
+      "Domain.Financial/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Domain.Stock": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Domain.Financial.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.Financial.dll": {}
+        }
+      },
       "Domain.Sales/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -2235,6 +2248,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Domain.Comuns": "1.0.0",
+          "Domain.Financial": "1.0.0",
           "Domain.Sales": "1.0.0",
           "Domain.Stock": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.8",
@@ -7562,6 +7576,11 @@
       "path": "../Domain.Comuns/Domain.Comuns.csproj",
       "msbuildProject": "../Domain.Comuns/Domain.Comuns.csproj"
     },
+    "Domain.Financial/1.0.0": {
+      "type": "project",
+      "path": "../Domain.Financial/Domain.Financial.csproj",
+      "msbuildProject": "../Domain.Financial/Domain.Financial.csproj"
+    },
     "Domain.Sales/1.0.0": {
       "type": "project",
       "path": "../Domain.Payments/Domain.Sales.csproj",
@@ -7609,6 +7628,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
             "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Payments\\Domain.Sales.csproj": {
               "projectPath": "Y:\\Faculdade\\Estoque\\ModuloEstoque\\Domain.Payments\\Domain.Sales.csproj"
@@ -7627,6 +7647,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -7642,7 +7663,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

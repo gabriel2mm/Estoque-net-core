@@ -19,6 +19,157 @@ namespace Stock.Infrastructure.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Stock.Domain.Models.BillTransaction", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("BillsToPayId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("BillsToReceiveId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<double>("Discount")
+                        .HasColumnName("Disconto")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Fine")
+                        .HasColumnName("Multa")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Interest")
+                        .HasColumnName("Juros")
+                        .HasColumnType("float");
+
+                    b.Property<string>("TransactionCode")
+                        .HasColumnName("codTransacao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("TransactionDate")
+                        .HasColumnName("DataDaTransacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("TransactionOperation")
+                        .HasColumnName("tipoOperacao")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TransactionType")
+                        .HasColumnName("TipoTransacao")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Value")
+                        .HasColumnName("Valor")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BillsToPayId");
+
+                    b.HasIndex("BillsToReceiveId");
+
+                    b.ToTable("TransaçãoContas");
+                });
+
+            modelBuilder.Entity("Stock.Domain.Models.BillsToPay", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Beneficiary")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("BeneficiaryNumber")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Discount")
+                        .HasColumnType("float");
+
+                    b.Property<DateTime>("DueDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("Fine")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Interest")
+                        .HasColumnType("float");
+
+                    b.Property<Guid?>("InvoiceId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("NewTitleId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Number")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Value")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("InvoiceId");
+
+                    b.HasIndex("NewTitleId");
+
+                    b.ToTable("ContasAPagar");
+                });
+
+            modelBuilder.Entity("Stock.Domain.Models.BillsToReceive", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<double>("Discount")
+                        .HasColumnType("float");
+
+                    b.Property<DateTime>("DueDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("Fine")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Interest")
+                        .HasColumnType("float");
+
+                    b.Property<Guid?>("InvoiceId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("NewTitleId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Number")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Payer")
+                        .HasColumnName("Sacado")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PayerNumber")
+                        .HasColumnName("NumeroSacado")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Value")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("InvoiceId");
+
+                    b.HasIndex("NewTitleId");
+
+                    b.ToTable("ContasAReceber");
+                });
+
             modelBuilder.Entity("Stock.Domain.Models.BranchOffice", b =>
                 {
                     b.Property<Guid>("Id")
@@ -462,6 +613,41 @@ namespace Stock.Infrastructure.Migrations
                     b.HasIndex("LocationWareHouseId");
 
                     b.ToTable("Deposito");
+                });
+
+            modelBuilder.Entity("Stock.Domain.Models.BillTransaction", b =>
+                {
+                    b.HasOne("Stock.Domain.Models.BillsToPay", "BillsToPay")
+                        .WithMany("BillTransactions")
+                        .HasForeignKey("BillsToPayId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.HasOne("Stock.Domain.Models.BillsToReceive", "BillsToReceive")
+                        .WithMany("BillTransactions")
+                        .HasForeignKey("BillsToReceiveId")
+                        .OnDelete(DeleteBehavior.NoAction);
+                });
+
+            modelBuilder.Entity("Stock.Domain.Models.BillsToPay", b =>
+                {
+                    b.HasOne("Stock.Domain.Models.Invoice", "Invoice")
+                        .WithMany()
+                        .HasForeignKey("InvoiceId");
+
+                    b.HasOne("Stock.Domain.Models.BillsToPay", "NewTitle")
+                        .WithMany()
+                        .HasForeignKey("NewTitleId");
+                });
+
+            modelBuilder.Entity("Stock.Domain.Models.BillsToReceive", b =>
+                {
+                    b.HasOne("Stock.Domain.Models.Invoice", "Invoice")
+                        .WithMany()
+                        .HasForeignKey("InvoiceId");
+
+                    b.HasOne("Stock.Domain.Models.BillsToReceive", "NewTitle")
+                        .WithMany()
+                        .HasForeignKey("NewTitleId");
                 });
 
             modelBuilder.Entity("Stock.Domain.Models.Campaign", b =>

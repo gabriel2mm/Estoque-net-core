@@ -1883,6 +1883,14 @@
           "Domain.Comuns.dll": {}
         }
       },
+      "Domain.Financial/1.0.0": {
+        "dependencies": {
+          "Domain.Stock": "1.0.0"
+        },
+        "runtime": {
+          "Domain.Financial.dll": {}
+        }
+      },
       "Domain.Sales/1.0.0": {
         "dependencies": {
           "Domain.Stock": "1.0.0"
@@ -1899,6 +1907,7 @@
       "Infrastructure.Comuns/1.0.0": {
         "dependencies": {
           "Domain.Comuns": "1.0.0",
+          "Domain.Financial": "1.0.0",
           "Domain.Sales": "1.0.0",
           "Domain.Stock": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.8",
@@ -3107,6 +3116,11 @@
       "sha512": ""
     },
     "Domain.Comuns/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain.Financial/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

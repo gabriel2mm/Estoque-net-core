@@ -1,0 +1,12 @@
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Financial\bin\Debug\netcoreapp3.1\Domain.Financial.deps.json
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Financial\bin\Debug\netcoreapp3.1\Domain.Financial.dll
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Financial\bin\Debug\netcoreapp3.1\Domain.Financial.pdb
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Financial\obj\Debug\netcoreapp3.1\Domain.Financial.csprojAssemblyReference.cache
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Financial\obj\Debug\netcoreapp3.1\Domain.Financial.AssemblyInfoInputs.cache
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Financial\obj\Debug\netcoreapp3.1\Domain.Financial.AssemblyInfo.cs
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Financial\obj\Debug\netcoreapp3.1\Domain.Financial.csproj.CoreCompileInputs.cache
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Financial\obj\Debug\netcoreapp3.1\Domain.Financial.dll
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Financial\obj\Debug\netcoreapp3.1\Domain.Financial.pdb
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Financial\bin\Debug\netcoreapp3.1\Domain.Stock.dll
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Financial\bin\Debug\netcoreapp3.1\Domain.Stock.pdb
+Y:\Faculdade\Estoque\ModuloEstoque\Domain.Financial\obj\Debug\netcoreapp3.1\Domain.Financial.csproj.CopyComplete

@@ -17,3 +17,5 @@ Y:\Faculdade\Estoque\ModuloEstoque\Infrastructure.Sales\obj\Debug\netcoreapp3.1\
 Y:\Faculdade\Estoque\ModuloEstoque\Infrastructure.Sales\obj\Debug\netcoreapp3.1\Infrastructure.Sales.dll
 Y:\Faculdade\Estoque\ModuloEstoque\Infrastructure.Sales\obj\Debug\netcoreapp3.1\Infrastructure.Sales.pdb
 Y:\Faculdade\Estoque\ModuloEstoque\Infrastructure.Sales\bin\Debug\netcoreapp3.1\appsettings.json
+Y:\Faculdade\Estoque\ModuloEstoque\Infrastructure.Sales\bin\Debug\netcoreapp3.1\Domain.Financial.dll
+Y:\Faculdade\Estoque\ModuloEstoque\Infrastructure.Sales\bin\Debug\netcoreapp3.1\Domain.Financial.pdb

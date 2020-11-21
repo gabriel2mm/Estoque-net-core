@@ -1,6 +1,5 @@
 Y:\Faculdade\Estoque\ModuloEstoque\Applications.Stock\bin\Debug\netcoreapp3.1\appsettings.Development.json
 Y:\Faculdade\Estoque\ModuloEstoque\Applications.Stock\bin\Debug\netcoreapp3.1\appsettings.json
-Y:\Faculdade\Estoque\ModuloEstoque\Applications.Stock\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 Y:\Faculdade\Estoque\ModuloEstoque\Applications.Stock\bin\Debug\netcoreapp3.1\Application.Stock.exe
 Y:\Faculdade\Estoque\ModuloEstoque\Applications.Stock\bin\Debug\netcoreapp3.1\Application.Stock.deps.json
 Y:\Faculdade\Estoque\ModuloEstoque\Applications.Stock\bin\Debug\netcoreapp3.1\Application.Stock.runtimeconfig.json
@@ -92,3 +91,6 @@ Y:\Faculdade\Estoque\ModuloEstoque\Applications.Stock\bin\Debug\netcoreapp3.1\Mi
 Y:\Faculdade\Estoque\ModuloEstoque\Applications.Stock\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
 Y:\Faculdade\Estoque\ModuloEstoque\Applications.Stock\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
 Y:\Faculdade\Estoque\ModuloEstoque\Applications.Stock\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+Y:\Faculdade\Estoque\ModuloEstoque\Applications.Stock\bin\Debug\netcoreapp3.1\Domain.Financial.dll
+Y:\Faculdade\Estoque\ModuloEstoque\Applications.Stock\bin\Debug\netcoreapp3.1\Domain.Financial.pdb
+Y:\Faculdade\Estoque\ModuloEstoque\Applications.Stock\obj\Debug\netcoreapp3.1\scopedcss\bundle\Application.Stock.styles.css

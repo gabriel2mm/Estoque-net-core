@@ -59,11 +59,24 @@ namespace Stock.Infrastructure.Context
                 .WithOne(w => w.BranchOffice)
                 .OnDelete(DeleteBehavior.NoAction);
 
+            builder.Entity<BillsToPay>()
+                .HasMany<BillTransaction>(b => b.BillTransactions)
+                .WithOne(b => b.BillsToPay)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            builder.Entity<BillsToReceive>()
+                .HasMany<BillTransaction>(b => b.BillTransactions)
+                .WithOne(b => b.BillsToReceive)
+                .OnDelete(DeleteBehavior.NoAction);
+
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
         }
 
+        public virtual DbSet<BillsToPay> BillsToPays { get; set; }
+        public virtual DbSet<BillsToReceive> BillsToReceives { get; set; }
+        public virtual DbSet<BillTransaction> BillTransactions { get; set; }
         public virtual DbSet<Reservation> Reservations { get; set; }
         public virtual DbSet<Campaign> Campaigns { get; set; }
         public virtual DbSet<BranchOffice> BranchOffices { get; set; }

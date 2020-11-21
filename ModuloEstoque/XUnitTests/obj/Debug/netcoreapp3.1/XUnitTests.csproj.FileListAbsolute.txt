@@ -4,7 +4,6 @@ Y:\Faculdade\Estoque\ModuloEstoque\XUnitTests\obj\Debug\netcoreapp3.1\XUnitTests
 Y:\Faculdade\Estoque\ModuloEstoque\XUnitTests\obj\Debug\netcoreapp3.1\XUnitTests.csproj.CoreCompileInputs.cache
 Y:\Faculdade\Estoque\ModuloEstoque\XUnitTests\bin\Debug\netcoreapp3.1\appsettings.Development.json
 Y:\Faculdade\Estoque\ModuloEstoque\XUnitTests\bin\Debug\netcoreapp3.1\appsettings.json
-Y:\Faculdade\Estoque\ModuloEstoque\XUnitTests\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 Y:\Faculdade\Estoque\ModuloEstoque\XUnitTests\bin\Debug\netcoreapp3.1\Application.Stock.exe
 Y:\Faculdade\Estoque\ModuloEstoque\XUnitTests\bin\Debug\netcoreapp3.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 Y:\Faculdade\Estoque\ModuloEstoque\XUnitTests\bin\Debug\netcoreapp3.1\xunit.runner.reporters.netcoreapp10.dll
@@ -170,3 +169,5 @@ Y:\Faculdade\Estoque\ModuloEstoque\XUnitTests\bin\Debug\netcoreapp3.1\Microsoft.
 Y:\Faculdade\Estoque\ModuloEstoque\XUnitTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
 Y:\Faculdade\Estoque\ModuloEstoque\XUnitTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
 Y:\Faculdade\Estoque\ModuloEstoque\XUnitTests\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+Y:\Faculdade\Estoque\ModuloEstoque\XUnitTests\bin\Debug\netcoreapp3.1\Domain.Financial.dll
+Y:\Faculdade\Estoque\ModuloEstoque\XUnitTests\bin\Debug\netcoreapp3.1\Domain.Financial.pdb

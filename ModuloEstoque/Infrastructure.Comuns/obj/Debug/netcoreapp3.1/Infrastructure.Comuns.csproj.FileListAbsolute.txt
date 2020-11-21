@@ -18,3 +18,5 @@ Y:\Faculdade\Estoque\ModuloEstoque\Infrastructure.Comuns\obj\Debug\netcoreapp3.1
 Y:\Faculdade\Estoque\ModuloEstoque\Infrastructure.Comuns\obj\Debug\netcoreapp3.1\Infrastructure.Comuns.genruntimeconfig.cache
 Y:\Faculdade\Estoque\ModuloEstoque\Infrastructure.Comuns\obj\Debug\netcoreapp3.1\Infrastructure.Comuns.csproj.CoreCompileInputs.cache
 Y:\Faculdade\Estoque\ModuloEstoque\Infrastructure.Comuns\bin\Debug\netcoreapp3.1\appsettings.json
+Y:\Faculdade\Estoque\ModuloEstoque\Infrastructure.Comuns\bin\Debug\netcoreapp3.1\Domain.Financial.dll
+Y:\Faculdade\Estoque\ModuloEstoque\Infrastructure.Comuns\bin\Debug\netcoreapp3.1\Domain.Financial.pdb

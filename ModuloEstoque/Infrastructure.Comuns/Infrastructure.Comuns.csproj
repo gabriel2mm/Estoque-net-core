@@ -32,6 +32,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Domain.Comuns\Domain.Comuns.csproj" />
+    <ProjectReference Include="..\Domain.Financial\Domain.Financial.csproj" />
     <ProjectReference Include="..\Domain.Payments\Domain.Sales.csproj" />
     <ProjectReference Include="..\Domain.Stock\Domain.Stock.csproj" />
   </ItemGroup>
