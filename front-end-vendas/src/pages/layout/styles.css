@@ -1,0 +1,291 @@
+* {
+  font-family: "Roboto", Helvetica Neue, sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  background: #511ca0;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 400px;
+}
+
+.header .logo h1 {
+  color: #FFF;
+  text-align: center;
+  padding-top: 20px;
+  cursor: pointer;
+  font-size: 2.3em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.search,
+.searchMobile {
+  width: 50%;
+  position: relative;
+}
+
+.inputSearch {
+  height: 45px;
+  width: 100%;
+  border: none;
+  border-radius: 18px;
+  outline: none;
+  padding: 0px 15px;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+.btnSearch {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  right: 0px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  outline: none;
+  border: none;
+  transition: ease-in 0.2s;
+  background: #FFF;
+  font-size: 1.3em;
+}
+
+.btnSearch:hover,
+.btnSearch:focus {
+  background: #13ABE1;
+  color: #FFF;
+}
+
+.options {
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3em;
+}
+
+.favoritos {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.favoritos:hover span {
+  color: red;
+}
+
+.entrar {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.carrinho {
+  margin: 10px;
+  position: relative;
+  font-size: 1.6em;
+  cursor: pointer;
+}
+
+.Badge {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  font-size: 6pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.menuMobile {
+  font-size: 1.3em;
+  color: #FFF;
+  display: none;
+  opacity: 0;
+}
+
+.categories {
+  padding: 0px 10%;
+  height: 35px;
+  width: 100%;
+  background-color: #481E87;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3em;
+  font-weight: 200;
+  color: #FFF;
+}
+
+.categories ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  margin-top: 17.5px;
+  text-align: center;
+}
+
+.categories ul li {
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+.categories ul li:hover {
+  color: #DDD;
+}
+
+.container {
+  padding: 15px 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+a:active,
+a:visited,
+a:link {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.search a:active,
+.search a:link,
+.search a:visited{
+  color: #333;
+}
+
+@media screen and (min-width: 920px){
+  .optionsMobile{
+    height: 0;
+  }
+
+  .searchMobile{
+    height: 0;
+  }
+
+  .categoriesMobile{
+    height: 0;
+  }
+}
+
+@media screen and (max-width: 920px) and (min-width: 590px) {
+  .menuMobile {
+      display: block;
+      opacity: 1;
+      padding: 15px;
+  }
+  .search {
+      display: none;
+  }
+  .searchMobile {
+      width: 70%;
+      padding: 15px;
+      margin: 0 auto;
+  }
+  .categories {
+      display: none;
+      opacity: 0;
+  }
+  .optionsMobile {
+      display: block !important;
+      opacity: 1 !important;
+  }
+  .menuOptions {
+      display: none;
+      opacity: 0;
+      height: 0;
+  }
+}
+
+.categoriesMobile {
+  width: 100%;
+  font-size: 1.3em;
+  color: white;
+  padding: 10px 0px;
+}
+
+.categoriesMobile ul {
+  padding: 0px 10%;
+  margin: 0;
+  border: 0;
+}
+
+.categoriesMobile ul li {
+  list-style: none;
+}
+
+.optionsMobile {
+  transition: all ease-in-out 0.3s;
+  display: none;
+  opacity: 0;
+  background-color: #481E87;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px 10%;
+  height: 15vh;
+}
+
+@media screen and (max-width: 590px) {
+  .options {
+      display: none;
+      opacity: 0;
+  }
+  .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+  }
+  .menuOptions {
+      display: flex;
+      opacity: 1;
+  }
+  .menuMobile {
+      display: block;
+      opacity: 1;
+      padding: 15px;
+  }
+  .search {
+      display: none;
+  }
+  .searchMobile {
+      width: 70%;
+      padding: 15px;
+      margin: 0 auto;
+  }
+  .categories {
+      display: none;
+      opacity: 0;
+  }
+  .optionsMobile {
+      display: block !important;
+      opacity: 1 !important;
+  }
+}
+
+.menuOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

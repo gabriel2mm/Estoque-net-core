@@ -1,0 +1,30 @@
+*{
+  font-family: "Roboto", sans-serif;
+}
+.slick-track{
+  height: 300px;
+}
+
+.img img{
+  object-fit: cover;
+  object-position: center center;
+  height: 300px;
+}
+
+.painel{
+  position: absolute;
+  top: 150px;
+  left: 65px;
+} 
+
+.painel .title h1{
+  color: white;
+  text-shadow: 2px 1px black;
+  font-weight: 300;
+}
+
+.painel .desc p{
+  color: white;
+  text-shadow: 2px 1px black;
+  font-weight: 300;
+}

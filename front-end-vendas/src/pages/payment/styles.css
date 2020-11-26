@@ -1,0 +1,108 @@
+form{
+  width:100% !important;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  font-size: 1.em;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-group{
+  width: calc(100% - 20px);
+  margin: 0px 10px;
+}
+
+.ant-input{
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+.input{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-variant: tabular-nums;
+  list-style: none;
+  -webkit-font-feature-settings: 'tnum';
+  font-feature-settings: 'tnum', "tnum";
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-width: 0;
+  padding: 4px 11px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  line-height: 1.5715;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.input:focus, .input:hover{
+  border-color: #40a9ff;
+  border-right-width: 1px !important;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.user{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+.informacoesEntrega{
+  padding: 30px;
+  width: 100%;
+  background-color: #F4F4F4;
+  display:flex;
+  flex-direction: row;
+  flex-basis: 33%;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-group-3{
+  width: calc(33% - 20px);
+  margin: 0px 10px;
+}
+
+.informacoesPagamento{
+  display:flex;
+  flex-direction: row;
+  flex-basis: 33%;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.credito{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
+
+.boleto{
+  width: 100%;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

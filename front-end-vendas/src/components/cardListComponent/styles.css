@@ -1,0 +1,7 @@
+.card_list {
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

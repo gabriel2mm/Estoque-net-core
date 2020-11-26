@@ -1,0 +1,19 @@
+#cart {
+    width: 100%;
+}
+
+.valorTotal {
+    float: right;
+    margin: 5px 20px;
+    font-size: 1.3em;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+}

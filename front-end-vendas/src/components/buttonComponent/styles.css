@@ -1,0 +1,20 @@
+.btn {
+    height: 45px;
+    width: 150px;
+    border: none;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+    margin: 0px 5px;
+    float: right;
+}
+
+.primary {
+    background-color: #13ABE1;
+}
+
+.danger {
+    background-color: red;
+}
