@@ -4,6 +4,8 @@ Este desenvolvimento foi realizado para a disciplina de sistemas convergentes co
 O sistema foi desenvolvimento utilizando a plataforma .net core 3.1, entityfamework core 3.1 e sql server. 
 
 Equipe
-Gabriel Moré Maia - 1502979
-Alexandre José
-Adriano Carvalho
+- Gabriel Moré Maia - 1502979
+
+- Alexandre José
+
+- Adriano Carvalho
